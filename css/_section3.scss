@@ -1,0 +1,130 @@
+.sectionThree {
+  max-width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .setupCtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .bgImgCtn {
+      width: 100%;
+      min-height: 100%;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      img {
+        width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        opacity: 0.9;
+      }
+    }
+
+    .overlayCtn {
+      width: 100%;
+      min-height: 100%;
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      right: 0;
+      left: 0;
+      background: #dc2f02;
+      opacity: 0.9;
+    }
+  }
+
+  .wrapperCtn {
+    width: 90%;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 4rem 0;
+
+    .heroCtn {
+      width: 100%;
+      max-width: 100%;
+      position: relative;
+      z-index: 3;
+      color: #fff5ee;
+
+      .contentCtn {
+        width: 100%;
+        max-width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+
+        .heroSubHeading {
+          font-size: 1.6rem;
+          font-weight: 300;
+        }
+
+        .heroHeading {
+          display: block;
+          margin-bottom: 1rem;
+          font-size: 2.4rem;
+          font-weight: 700;
+        }
+
+        .heroText {
+          display: block;
+          font-size: 1.2rem;
+          font-weight: 400;
+        }
+      }
+
+      .workCtnRow {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem auto;
+
+        .projectCtn {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          margin: 0 3rem;
+
+          .imgCtn {
+            width: 100%;
+            margin-bottom: 0.5rem;
+          }
+
+          .captionLink {
+            .projectTitle {
+              display: block;
+              font-size: 1.8rem;
+              font-weight: 700;
+            }
+
+            .projectDateCategory {
+              font-size: 1.2rem;
+              font-weight: 300;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,129 @@
+@media (max-width: 768px) {
+  .sectionOne {
+    header {
+      nav {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 2.5rem;
+        color: #323232;
+
+        .navLogo {
+          font-size: 1.6rem;
+          color: #fff5ee;
+          transition: all 0.3s ease;
+        }
+
+        .navMenu {
+          width: 100%;
+          position: absolute;
+          top: 100%;
+          left: -100%;
+          margin: 2rem 0;
+          padding: 0;
+          flex-direction: column;
+          justify-content: center;
+          background-color: #fff5ee;
+          text-align: center;
+          transition: 0.5s;
+
+          .navItem {
+            width: 100%;
+            display: block;
+            margin: 0;
+            padding: 2rem 0;
+            border-top: 1px solid #32323215;
+            color: #323232;
+
+            .navLink {
+              font-size: 1.6rem;
+              font-weight: 700;
+            }
+          }
+        }
+
+        .navMenu.active {
+          left: 0;
+        }
+
+        .hamburgerBtn {
+          display: block;
+          cursor: pointer;
+
+          .barLine {
+            background-color: #fff5ee;
+          }
+        }
+
+        .hamburgerBtn.active .barLine:nth-child(2) {
+          opacity: 0;
+        }
+
+        .hamburgerBtn.active .barLine:nth-child(1) {
+          transform: translateY(8px) rotate(45deg);
+        }
+
+        .hamburgerBtn.active .barLine:nth-child(3) {
+          transform: translateY(-8px) rotate(-45deg);
+        }
+      }
+    }
+
+    header.sticky {
+      background-color: #fff5ee;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+        rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+      nav {
+        color: #323232;
+
+        .navLogo {
+          color: #323232;
+        }
+
+        .navMenu {
+          .navItem {
+            .contactBtn {
+              background-color: unset;
+              border: unset;
+            }
+          }
+        }
+      }
+
+      .hamburgerBtn {
+        .barLine {
+          background-color: #323232;
+        }
+      }
+    }
+  }
+
+  .sectionTwo {
+    .wrapperCtn {
+      width: 100%;
+    }
+  }
+
+  .sectionThree {
+    .wrapperCtn {
+      .heroCtn {
+        .contentCtn {
+          max-width: 100%;
+        }
+
+        .workCtnRow {
+          flex-wrap: wrap;
+          margin: 0 auto;
+
+          .projectCtn {
+            margin: 1.5rem 0;
+          }
+
+          .projectCtn:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}

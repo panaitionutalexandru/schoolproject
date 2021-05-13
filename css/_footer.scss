@@ -1,0 +1,63 @@
+footer {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #fff5ee;
+
+  .wrapperCtn {
+    width: 90%;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 4rem 0;
+
+    .heroCtn {
+      width: 100%;
+      max-width: 100%;
+      position: relative;
+      z-index: 3;
+      color: #323232;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      .contentCtn {
+        .heroSubHeading {
+          font-size: 1.6rem;
+          font-weight: 300;
+        }
+
+        .heroHeading {
+          display: block;
+          margin-bottom: 1rem;
+          font-size: 2.4rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          color: #dc2f02;
+        }
+      }
+
+      .socialCtn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+          text-align: center;
+
+          ion-icon {
+            display: block;
+            padding: 1rem;
+            font-size: 2.4rem;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
